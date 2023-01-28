@@ -39,10 +39,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.45);
 }
 .nav-item {
-  display: inline;
   padding: 8px;
   font-size: 1.5em;
   text-decoration: none;
@@ -586,22 +585,13 @@ td {
 }
 /* -----pricing page end----- */
 /* -----contact page start----- */
-/* .nav-header {
-  background-color:transparent;
-  height: 125px;
-  color: red;
-  display: flex;
-  align-items: center;
-} */
-
 .bg {
   width: 100%;
-  height: 100vh;
+  height: 155vh;
   background-image: url("../img/hd-wallpaper-1851054_1920.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  
 }
 .overlay {
   background-color: rgba(0, 0, 0, 0.15);
@@ -610,53 +600,95 @@ td {
 }
 .form_container {
   width: auto;
-  height: 100%;
-  border: 2px solid black;
+  height: 1100px;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.block-1 {
+form {
+  background-color: rgba(0, 0, 0, 0.45);
+  width: 500px;
+  color: rgb(235, 228, 228);
+}
+h3 {
+  margin: 5px;
+  color:rgb(235, 228, 228);
+  font-weight: 600;
+}
+label{
+  font-weight: 500;
+}
+.radio_box_con {
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.radio_box_col{
+  display:flex; 
+}
+.radio_box_label{
+  display: flex;
+}
+input[type="radio"] {
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  margin:5px;
+  outline: 2px solid rgb(235, 228, 228);
+}
+input[type="radio"]:checked {
   background-color: red;
-  width: 150px;
-  height: 150px;
+  transition: all 1.5s; 
+  outline:2px solid red;
 }
-.block-2 {
-  background-color: green;
-  height: 150px;
-  width:150px;
+textarea {
+  margin: 10px;
 }
-.block-3 {
-  background-color: blue;
-  height: 150px;
-  width:150px;
+select {
+  text-align: center;
+  margin: 8px;
+}
+.checkbox_con {
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.checkbox_col{
+  display:flex; 
+}
+.checkbox_label{
+  display: flex;
+}
+input[type="checkbox"] {
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  margin:5px;
+  outline: 2px solid rgb(235, 228, 228);
+}
+input[type="checkbox"]:checked {
+  background-color: red;
+  transition: all 1.5s;
+  outline:2px solid red;
+}
+.form_btn {
+  width: 75px;
+  height: 25px;
+  border: 2px solid black;
+  background-color: black;
+  border-radius: 5px;
+  margin: 5px;
+  font-weight: bold;
+  color: red;
+}
+.form_btn:hover{
+  transform:scale(1.2);
+  transition:all 1.5s
 }
 
-/* form {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-} */
-/* p,
-label,
-legend,
-select,
-textarea,
-option {
-  text-align: center;
-  color: red;
-  font-weight: bold;
-}
-fieldset{
-  vertical-align: middle;
-  position:relative;
-}       */
-/* .diet {
-  display: grid;
-} */
-/* input[type="checkbox"]:focus,
-input[type="radio"]:focus,
-input[type="check"]:focus{
-  color: red;
-} */
+
+
+

@@ -82,39 +82,69 @@ body {
   align-items: flex-end;
 }
 @media (max-width: 1200px) {
-  .menu-image {
-    margin-bottom: 2em;
+  .flex-row {
+    flex-direction: column;
   }
-  .french, .canapes, .italian, .seafood, .thai, .soups {
-    padding: 2em 4em 0;
+  .container {
+    flex-direction: row;
+  }
+  .french,
+  .canapes,
+  .italian,
+  .seafood,
+  .thai,
+  .soups {
+    padding: 2em 2em 0;
   }
 }
-
-/* @media (max-width: 992px) {
-  .menu-image {
-    margin-bottom: 2em;
+@media (max-width: 992px) {
+  .flex-row {
+    flex-direction: column;
   }
-  .french, .canapes, .italian, .seafood, .thai, .soups {
-    padding: 2em 4em 0;
+  .container {
+    flex-direction: row;
+  }
+  .french,
+  .canapes,
+  .italian,
+  .seafood,
+  .thai,
+  .soups {
+    padding: 2em 2em 0;
   }
 }
-@media (max-width: 768px) 
-{
-  .menu-image {
-    margin-bottom: 2em;
+@media (max-width: 768px) {
+  .flex-row {
+    flex-direction: column;
   }
-  .french, .canapes, .italian, .seafood, .thai, .soups {
-    padding: 4em 4em 0;
+  .container {
+    flex-direction: row;
+  }
+  .french,
+  .canapes,
+  .italian,
+  .seafood,
+  .thai,
+  .soups {
+    padding: 2em 2em 0;
   }
 }
 @media (max-width: 576px) {
-  .menu-image {
-    margin-bottom: 2em;
+  .flex-row {
+    flex-direction: column;
   }
-  .french, .canapes, .italian, .seafood, .thai, .soups {
-    padding: 2em 4em 0;
+  .container {
+    flex-direction: row;
   }
-} */
+  .french,
+  .canapes,
+  .italian,
+  .seafood,
+  .thai,
+  .soups {
+    padding: 2em 2em 0;
+  }
+}
 .fire {
   font-size: 3.5vw;
   font-weight: bold;
@@ -167,8 +197,8 @@ body {
     0.04em -0.2em 0.3em #f70, 0.05em -0.25em 0.6em #f70, 0.06em -0.2em 1em #f50,
     0.1em -0.1em 1em;
   transition: 1.5s;
-  font-size: 2em;
   background-color: transparent;
+  transform: skewY(15deg) scale(1.75);
 }
 .french {
   background-image: url("../img/French/abstract-1238658__480.jpg");
@@ -199,7 +229,7 @@ body {
   padding: 8px;
   font-size: 1.5em;
   text-decoration: none;
-  font-family: Georgia;
+  font-family: "Georgia";
   color: red;
 }
 .nav-item-pages-1:hover {
@@ -236,7 +266,7 @@ body {
   color: lightgrey;
   justify-content: center;
   text-align: center;
-  padding: 40px;
+  padding: 100px;
 }
 .page-title-2 {
   display: flex;
@@ -244,8 +274,9 @@ body {
   font-weight: bold;
   font-family: Georgia;
   color: red;
-  text-align: center;
   justify-content: center;
+  text-align: center;
+  padding: 100px;
 }
 /* -----Main page end----- */
 /* -----French page start----- */
@@ -303,6 +334,38 @@ body {
   margin: 5px;
   outline: 1px solid white;
 }
+@media (max-width: 1200px) {
+  .flex-row-pages {
+    flex-direction: column;
+  }
+  .container-pages {
+    flex-direction: row;
+  }
+}
+@media (max-width: 992px) {
+  .flex-row-pages {
+    flex-direction: column;
+  }
+  .container-pages {
+    flex-direction: row;
+  }
+}
+@media (max-width: 768px) {
+  .flex-row-pages {
+    flex-direction: column;
+  }
+  .container-pages {
+    flex-direction: row;
+  }
+}
+@media (max-width: 576px) {
+  .flex-row-pages {
+    flex-direction: column;
+  }
+  .container-pages {
+    flex-direction: row;
+  }
+}
 /* -----French page end----- */
 /* -----Canape page start----- */
 .can-img-1 {
@@ -359,6 +422,70 @@ body {
   margin: 5px;
   outline: 1px solid white;
 }
+/* @media (max-width: 1200px) {
+  .flex-row-pages {
+    flex-direction: column;
+  }
+  .container-pages {
+    flex-direction: row;
+  }
+  .can-img-1,
+  .can-img-2,
+  .can-img-3,
+  .can-img-4,
+  .can-img-5,
+  .can-img-6 {
+    padding: 2em 4em 0;
+  }
+}
+@media (max-width: 992px) {
+  .flex-row-pages {
+    flex-direction: column;
+  }
+  .container-pages {
+    flex-direction: row;
+  }
+  .can-img-1,
+  .can-img-2,
+  .can-img-3,
+  .can-img-4,
+  .can-img-5,
+  .can-img-6 {
+    padding: 2em 4em 0;
+  }
+}
+@media (max-width: 768px) {
+  .flex-row-pages {
+    flex-direction: column;
+  }
+  .container-pages {
+    flex-direction: row;
+  }
+  .can-img-1,
+  .can-img-2,
+  .can-img-3,
+  .can-img-4,
+  .can-img-5,
+  .can-img-6 {
+    padding: 2em 4em 0;
+  }
+}
+@media (max-width: 576px) {
+  .flex-row-pages {
+    flex-direction: column;
+  }
+  .container-pages {
+    flex-direction: row;
+  }
+  .can-img-1,
+  .can-img-2,
+  .can-img-3,
+  .can-img-4,
+  .can-img-5,
+  .can-img-6 {
+    padding: 2em 4em 0;
+  }
+} */
 /* -----Canape page end----- */
 /* -----Italian page start----- */
 .it-img-1 {
@@ -415,6 +542,70 @@ body {
   margin: 5px;
   outline: 1px solid white;
 }
+/* @media (max-width: 1200px) {
+  .flex-row-pages {
+    flex-direction: column;
+  }
+  .container-pages {
+    flex-direction: row;
+  }
+  .it-img-1,
+  .it-img-2,
+  .it-img-3,
+  .it-img-4,
+  .it-img-5,
+  .it-img-6 {
+    padding: 2em 4em 0;
+  }
+}
+@media (max-width: 992px) {
+  .flex-row-pages {
+    flex-direction: column;
+  }
+  .container-pages {
+    flex-direction: row;
+  }
+  .it-img-1,
+  .it-img-2,
+  .it-img-3,
+  .it-img-4,
+  .it-img-5,
+  .it-img-6 {
+    padding: 2em 4em 0;
+  }
+}
+@media (max-width: 768px) {
+  .flex-row-pages {
+    flex-direction: column;
+  }
+  .container-pages {
+    flex-direction: row;
+  }
+  .it-img-1,
+  .it-img-2,
+  .it-img-3,
+  .it-img-4,
+  .it-img-5,
+  .it-img-6 {
+    padding: 2em 4em 0;
+  }
+}
+@media (max-width: 576px) {
+  .flex-row-pages {
+    flex-direction: column;
+  }
+  .container-pages {
+    flex-direction: row;
+  }
+  .it-img-1,
+  .it-img-2,
+  .it-img-3,
+  .it-img-4,
+  .it-img-5,
+  .it-img-6 {
+    padding: 2em 4em 0;
+  }
+} */
 /* -----Italian page end----- */
 /* -----Seafood page start----- */
 .sf-img-1 {
@@ -471,6 +662,70 @@ body {
   margin: 5px;
   outline: 1px solid white;
 }
+/* @media (max-width: 1200px) {
+  .flex-row-pages {
+    flex-direction: column;
+  }
+  .container-pages {
+    flex-direction: row;
+  }
+  .sf-img-1,
+  .sf-img-2,
+  .sf-img-3,
+  .sf-img-4,
+  .sf-img-5,
+  .sf-img-6 {
+    padding: 2em 4em 0;
+  }
+}
+@media (max-width: 992px) {
+  .flex-row-pages {
+    flex-direction: column;
+  }
+  .container-pages {
+    flex-direction: row;
+  }
+  .sf-img-1,
+  .sf-img-2,
+  .sf-img-3,
+  .sf-img-4,
+  .sf-img-5,
+  .sf-img-6 {
+    padding: 2em 4em 0;
+  }
+}
+@media (max-width: 768px) {
+  .flex-row-pages {
+    flex-direction: column;
+  }
+  .container-pages {
+    flex-direction: row;
+  }
+  .sf-img-1,
+  .sf-img-2,
+  .sf-img-3,
+  .sf-img-4,
+  .sf-img-5,
+  .sf-img-6 {
+    padding: 2em 4em 0;
+  }
+}
+@media (max-width: 576px) {
+  .flex-row-pages {
+    flex-direction: column;
+  }
+  .container-pages {
+    flex-direction: row;
+  }
+  .sf-img-1,
+  .sf-img-2,
+  .sf-img-3,
+  .sf-img-4,
+  .sf-img-5,
+  .sf-img-6 {
+    padding: 2em 4em 0;
+  }
+} */
 /* -----Seafood page end----- */
 /* -----Thai page start */
 .th-img-1 {
@@ -595,7 +850,6 @@ body {
 .pricing {
   text-align: center;
   color: whitesmoke;
-  padding: 10px;
 }
 table,
 tr,
@@ -648,35 +902,35 @@ form {
 }
 h3 {
   margin: 5px;
-  color:rgb(235, 228, 228);
+  color: rgb(235, 228, 228);
   font-weight: 600;
 }
-label{
+label {
   font-weight: 500;
 }
 .radio_box_con {
-display:flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.radio_box_col{
-  display:flex; 
+.radio_box_col {
+  display: flex;
 }
-.radio_box_label{
+.radio_box_label {
   display: flex;
 }
 input[type="radio"] {
   appearance: none;
   width: 10px;
   height: 10px;
-  margin:5px;
+  margin: 5px;
   outline: 2px solid rgb(235, 228, 228);
 }
 input[type="radio"]:checked {
   background-color: red;
-  transition: all 1.5s; 
-  outline:2px solid red;
+  transition: all 1.5s;
+  outline: 2px solid red;
 }
 textarea {
   margin: 10px;
@@ -686,28 +940,28 @@ select {
   margin: 8px;
 }
 .checkbox_con {
-display:flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.checkbox_col{
-  display:flex; 
+.checkbox_col {
+  display: flex;
 }
-.checkbox_label{
+.checkbox_label {
   display: flex;
 }
 input[type="checkbox"] {
   appearance: none;
   width: 10px;
   height: 10px;
-  margin:5px;
+  margin: 5px;
   outline: 2px solid rgb(235, 228, 228);
 }
 input[type="checkbox"]:checked {
   background-color: red;
   transition: all 1.5s;
-  outline:2px solid red;
+  outline: 2px solid red;
 }
 .form_btn {
   width: 75px;
@@ -719,11 +973,7 @@ input[type="checkbox"]:checked {
   font-weight: bold;
   color: red;
 }
-.form_btn:hover{
-  transform:scale(1.2);
-  transition:all 1.5s
+.form_btn:hover {
+  transform: scale(1.2);
+  transition: all 1.5s;
 }
-
-
-
-

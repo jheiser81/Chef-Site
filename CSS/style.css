@@ -81,70 +81,6 @@ body {
   justify-content: center;
   align-items: flex-end;
 }
-@media (max-width: 1200px) {
-  .flex-row {
-    flex-direction: column;
-  }
-  .container {
-    flex-direction: row;
-  }
-  .french,
-  .canapes,
-  .italian,
-  .seafood,
-  .thai,
-  .soups {
-    padding: 2em 2em 0;
-  }
-}
-@media (max-width: 992px) {
-  .flex-row {
-    flex-direction: column;
-  }
-  .container {
-    flex-direction: row;
-  }
-  .french,
-  .canapes,
-  .italian,
-  .seafood,
-  .thai,
-  .soups {
-    padding: 2em 2em 0;
-  }
-}
-@media (max-width: 768px) {
-  .flex-row {
-    flex-direction: column;
-  }
-  .container {
-    flex-direction: row;
-  }
-  .french,
-  .canapes,
-  .italian,
-  .seafood,
-  .thai,
-  .soups {
-    padding: 2em 2em 0;
-  }
-}
-@media (max-width: 576px) {
-  .flex-row {
-    flex-direction: column;
-  }
-  .container {
-    flex-direction: row;
-  }
-  .french,
-  .canapes,
-  .italian,
-  .seafood,
-  .thai,
-  .soups {
-    padding: 2em 2em 0;
-  }
-}
 .fire {
   font-size: 3.5vw;
   font-weight: bold;
@@ -333,38 +269,6 @@ body {
   display: flex;
   margin: 5px;
   outline: 1px solid white;
-}
-@media (max-width: 1200px) {
-  .flex-row-pages {
-    flex-direction: column;
-  }
-  .container-pages {
-    flex-direction: row;
-  }
-}
-@media (max-width: 992px) {
-  .flex-row-pages {
-    flex-direction: column;
-  }
-  .container-pages {
-    flex-direction: row;
-  }
-}
-@media (max-width: 768px) {
-  .flex-row-pages {
-    flex-direction: column;
-  }
-  .container-pages {
-    flex-direction: row;
-  }
-}
-@media (max-width: 576px) {
-  .flex-row-pages {
-    flex-direction: column;
-  }
-  .container-pages {
-    flex-direction: row;
-  }
 }
 /* -----French page end----- */
 /* -----Canape page start----- */
@@ -784,4 +688,103 @@ input[type="checkbox"]:checked {
 .form_btn:hover {
   transform: scale(1.2);
   transition: all 1.5s;
+}
+/* -----Contact page end----- */
+/* -----Breakpoints for index----- */
+@media (max-width: 1200px) {
+  .flex-row {
+    flex-direction: column;
+  }
+  .container {
+    flex-direction: row;
+  }
+  .french,
+  .canapes,
+  .italian,
+  .seafood,
+  .thai,
+  .soups {
+    padding: 2em 2em 0;
+  }
+}
+@media (max-width: 992px) {
+  .flex-row {
+    flex-direction: column;
+  }
+  .container {
+    flex-direction: row;
+  }
+  .french,
+  .canapes,
+  .italian,
+  .seafood,
+  .thai,
+  .soups {
+    padding: 2em 2em 0;
+  }
+}
+@media (max-width: 768px) {
+  .flex-row {
+    flex-direction: column;
+  }
+  .container {
+    flex-direction: row;
+  }
+  .french,
+  .canapes,
+  .italian,
+  .seafood,
+  .thai,
+  .soups {
+    padding: 2em 2em 0;
+  }
+}
+@media (max-width: 576px) {
+  .flex-row {
+    flex-direction: column;
+  }
+  .container {
+    flex-direction: row;
+  }
+  .french,
+  .canapes,
+  .italian,
+  .seafood,
+  .thai,
+  .soups {
+    padding: 2em 2em 0;
+  }
+}
+/* -----Breakpoints for pages----- */
+@media (max-width: 1200px) {
+  .flex-row-pages {
+    flex-direction: column;
+  }
+  .container-pages {
+    flex-direction: row;
+  }
+}
+@media (max-width: 992px) {
+  .flex-row-pages {
+    flex-direction: column;
+  }
+  .container-pages {
+    flex-direction: row;
+  }
+}
+@media (max-width: 768px) {
+  .flex-row-pages {
+    flex-direction: column;
+  }
+  .container-pages {
+    flex-direction: row;
+  }
+}
+@media (max-width: 576px) {
+  .flex-row-pages {
+    flex-direction: column;
+  }
+  .container-pages {
+    flex-direction: row;
+  }
 }

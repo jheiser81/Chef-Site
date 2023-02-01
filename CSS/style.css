@@ -196,7 +196,7 @@ body {
 }
 .page-title-1 {
   display: flex;
-  font-size: 2vw;
+  font-size: 2em;
   font-weight: bold;
   font-family: Georgia;
   color: lightgrey;
@@ -206,7 +206,7 @@ body {
 }
 .page-title-2 {
   display: flex;
-  font-size: 2vw;
+  font-size: 2em;
   font-weight: bold;
   font-family: Georgia;
   color: red;

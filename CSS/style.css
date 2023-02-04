@@ -39,7 +39,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: rgba(0, 0, 0, 0.40);
 }
 .nav-item {
   padding: 8px;
@@ -608,7 +608,7 @@ td {
   justify-content: center;
   }
 form {
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: rgba(0, 0, 0, 0.40);
   width: 500px;
   color: rgb(235, 228, 228);
 }

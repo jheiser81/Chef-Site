@@ -1,2 +1,2 @@
 # Chef Site
-Service site project for ICR120. HTML only
+Service site project for ICR120. CSS added.
